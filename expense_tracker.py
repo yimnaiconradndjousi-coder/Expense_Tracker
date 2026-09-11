@@ -7,7 +7,7 @@ from rich import print
 
 # ? CREATE, INITIATE, AND CONNECT DB ADD TABLE IF IT DOESN'T YET EXIST
 def connect_db():
-    conn = sql.connect("./Expense_Tracker/transaction.db")
+    conn = sql.connect("transaction.db")
     cur = conn.cursor()
     cur.execute("PRAGMA foreign_keys = ON;")
 
